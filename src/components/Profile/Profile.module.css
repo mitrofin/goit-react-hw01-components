@@ -34,24 +34,32 @@
 .name:focus {
   color: #020e18;
 }
-
+.tag {
+  display: block;
+  text-align: center;
+}
 .tag:hover,
 .tag:focus {
   color: #020e18;
+}
+.location {
+  display: block;
+  text-align: center;
 }
 .location:hover,
 .location:focus {
   color: #020e18;
 }
 .stats {
+  font-weight: 00;
   list-style: none;
-  font-weight: 600;
-  display: flex;
-  /* align-items: center;
-  justify-content: space-around; */
-  height: 70px;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: inherit;
   color: rgb(76, 76, 95);
   background-color: rgb(203, 200, 207);
 
@@ -62,12 +70,12 @@
   border: white solid 1px;
   line-height: 0.5em;
   display: grid;
-  grid-template-columns: 3fr 90px;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 }
+
 .stats > li:first-child {
   border-bottom-left-radius: 5px;
 }
@@ -75,6 +83,7 @@
 .stats > li:last-child {
   border-bottom-right-radius: 5px;
 }
+
 .stats > li:hover,
 .stats > li:focus {
   color: white;
@@ -82,7 +91,7 @@
 }
 
 .label {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .quantity:not(:last-child) {
