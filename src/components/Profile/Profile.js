@@ -4,26 +4,26 @@ import s from './Profile.module.scss';
 
 function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div class={s.profile}>
-      <div class={s.description}>
+    <div className={s.profile}>
+      <div className={s.description}>
         <img src={avatar} alt={name} class={s.avatar} width="310px" />
-        <p class={s.name}>{name}</p>
-        <p class={s.tag}>{tag}</p>
-        <p class={s.location}>{location}</p>
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul class={s.stats}>
+      <ul className={s.stats}>
         <li>
-          <span class={s.label}>Followers</span>
-          <span class={s.quantity}> {stats.followers}</span>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}> {stats.followers}</span>
         </li>
         <li>
-          <span class={s.label}>Views</span>
-          <span class={s.quantity}> {stats.views}</span>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}> {stats.views}</span>
         </li>
         <li>
-          <span class={s.label}>Likes</span>
-          <span class={s.quantity}> {stats.likes}</span>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}> {stats.likes}</span>
         </li>
       </ul>
     </div>
